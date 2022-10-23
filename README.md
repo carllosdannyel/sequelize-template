@@ -1,4 +1,4 @@
 # template-sequelize-with-mysql-and-express 
 <div>
-  <img src="https://miro.medium.com/max/1400/1*0OFy6TmEdbsZWGnrp5JEQg.png" alt="nodejs/express and sequelize and mysql"/>
+  <img src="https://miro.medium.com/max/736/1*3bMcQcLAE-fPjVEhnY5xsQ.png" alt="nodejs/express and sequelize and mysql"/>
 </div>
