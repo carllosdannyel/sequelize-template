@@ -4,9 +4,13 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "prestart": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all",
+    "prestart": "npx sequelize db:create",
     "start": "nodemon .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "npx sequelize db:create",
+    "drop": "npx sequelize db:drop",
+    "migrate": "npx sequelize db:migrate",
+    "seed": "npx sequelize db:seed:all"
   },
   "keywords": [],
   "author": "",
