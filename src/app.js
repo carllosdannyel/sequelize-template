@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// middlewares de erro já implementados
 app.use((err, _req, _res, next) => {
   console.error(err.stack);
   // passa o erro para o próximo middleware
@@ -13,7 +14,9 @@ app.use((err, _req, _res, next) => {
 });
 
 app.use((err, _req, res, _next) => {
-  res.status(500).json({ message: `Algo deu errado! Mensagem: ${err.message}` });
+  res
+    .status(500)
+    .json({ message: `Algo deu errado! Mensagem: ${err.message}` });
 });
 
 module.exports = app;
